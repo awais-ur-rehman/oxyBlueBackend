@@ -10,7 +10,7 @@ app.use(express.json());
 
 // MongoDB Connection
 const dbUrl =
-  "mongodb+srv://awaisurrehman:RealMadrid@mongodb.uk7fwy7.mongodb.net/OculaCare?retryWrites=true&w=majority&appName=MongoDB";
+  "mongodb+srv://<username>:<password>@mongodb.uk7fwy7.mongodb.net/OculaCare?retryWrites=true&w=majority&appName=MongoDB";
 mongoose
   .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))
