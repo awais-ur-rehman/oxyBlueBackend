@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080; // Use the PORT environment variable provided by Azure
 
 // Middleware
 app.use(cors());
